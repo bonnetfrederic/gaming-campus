@@ -1,0 +1,369 @@
+/*********************** Imports *************************/
+@font-face {
+  font-family: 'thin';
+  src: url(./assets/fonts/Montserrat-Thin.ttf);
+}
+@font-face {
+  font-family: 'med';
+  src: url(./assets/fonts/Montserrat-Medium.ttf);
+}
+
+/*********************** General *************************/
+* {
+  margin: 0;
+  padding: 0;
+  color: rgb(0, 0, 0);
+}
+body {
+  font-family: sans-serif;
+}
+main {
+  position: relative;
+}
+li {
+  list-style: none;
+}
+header {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+footer {
+  background: rgb(27, 27, 27);
+  padding-bottom: 30px;
+}
+
+/*********************** General Specs *************************/
+header ul {
+  margin: 0 40px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+header li {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-weight: bold;
+  position:relative;
+}
+header li::before{
+  /* 'content' et 'absolute' sont obligatoire !!! */
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: purple;
+  top: -10px;
+  display: none;
+}
+header li:hover{
+  cursor: pointer;
+}
+button:hover {
+  cursor: pointer;
+}
+main h4 {
+  width: 75%;
+  font-family: 'font-2', 'arial';
+  color: black;
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 40px auto;
+}
+footer h3 {
+  padding-top: 20px;
+  margin-bottom: 30px;
+  color: whitesmoke;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.8rem;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+footer li {
+  margin: 0 15px;
+}
+footer img {
+  height: 15px;
+}
+
+/*********************** Classes*************************/
+.bg {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+.logos {
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: rgb(27, 27, 27);
+  padding: 0 60px;
+}
+.logos-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 40px 20px;
+}
+.news {
+  margin: 60px 90px;
+}
+.section-header {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  margin: 35px 100px 35px 35px;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+}
+.div2 {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 120px;
+}
+.section-footer {
+  display: flex;
+  flex-direction:row;
+  margin: 60px 80px;
+}
+.talk-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/*********************** Classes Specs*************************/
+.bg img{
+  width: 100%;
+  object-fit: cover;
+}
+.logos-card img {
+  /* padding-top: 30px; */
+  margin: 15px auto;
+  height: 128px;
+  width: 200px;
+}
+.logos-card h3 {
+  text-align: center;
+  margin: 5px auto;
+  color: rgb(255, 255, 255);
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;;
+}
+.logos-card p {
+  color: rgb(255, 255, 255);
+  font-family: 'med';
+  font-size: 0.6rem;
+  text-align: center;
+}
+.logos-card button {
+  margin: 20px auto 10px;
+  background: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.4rem;
+  width: 100px;
+  height: 20px;
+  border: 1px solid white;
+}
+.section-header div {
+  display: flex;
+  flex-direction: column;
+}
+.section-header p {
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+.section-header h2 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin: 8px 0;
+}
+.section-header button {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: bold;
+  width: 130px;
+  height: 30px;
+  background: none;
+  border: 1px solid rgb(0, 0, 0);
+}
+.card img {
+  height: 151px;
+  width: 180px;
+}
+.card h4 {
+  font-size: 0.7rem;
+  width: 180px;
+  text-align: left;
+  margin: 15px 0;
+}
+.card h5 {
+  font-size: 0.6rem;
+  width: 185px;
+  line-height: 13px;
+}
+.div2 button {
+  background: none;
+  border: none;
+  color: purple;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-weight: bold;
+
+}
+
+/*********************** IDs*************************/
+#lang {
+  background: rgb(231, 224, 200);
+  border-radius: 20px;
+  height: 12px;
+  width: 40px;
+  text-align: center;
+  justify-content: center;
+}
+#lang::before{
+  display: none;
+}
+#lang:hover {
+  cursor: pointer;
+}
+#bg-over {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 30px;
+  margin: 0 20%;
+}
+#section-footer-div1 {
+  padding: 20px 20px;
+}
+#section-footer-div2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0 30px;
+} 
+
+/*********************** IDs Specs*************************/
+#bg-over img {
+  width: 90%;
+}
+#bg-over h2 {
+  margin: 20px auto;
+  font-family: 'med';
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight:light;
+}
+#bg-over button {
+  background: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  padding: 10px 15px;
+  border: 0.1px solid white;
+}
+#section-footer-div1 img{
+  height: 120px;
+}
+#section-footer-div2 div{
+  display: flex;
+  flex-direction: column;
+}
+#section-footer-div2 h4{
+  margin: 10px 0;
+  text-align-last: left;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  width: 110px;;
+}
+#section-footer-div2 li {
+  margin: 0 0 5px 0;
+}
+#section-footer-div2 a{
+  text-align-last: left;
+  font-size: 0.6rem;
+  text-decoration: none;
+  color: purple;
+  font-weight: bold;
+}
+#section-footer-div2 p{
+  width: 15vw;
+  font-size: 0.7rem;
+  font-weight: bold;
+  line-height: 13px;
+  margin: 4px 0 20px 0;
+}
+#contact p {
+  margin: 3px 0;
+}
+#follow {
+  margin-top: 15px;
+}
+#follow ul {
+  display: flex;
+  flex-direction: row;
+}
+#follow li {
+  margin: 0 5px;
+}
+#follow div {
+  margin-top: 20px;
+}
+#follow p {
+  margin: 0;
+  padding: 0;
+}
+#ta1 h4 {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  text-align: left;
+  margin: 0;
+}
+#ta1 h5 {
+  font-size: 0.6rem;
+  text-align: left;
+  margin: 10px 0;
+}
+#ta2 ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#ta2 li {
+  width: 70px;
+}
+#ta2 img {
+  height: 13px;
+}
