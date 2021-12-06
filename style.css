@@ -149,12 +149,13 @@ footer img {
 .section-footer {
   display: flex;
   flex-direction:row;
-  margin: 60px 80px;
+  /* margin: 60px 80px; */
+  margin: 60px 80px 60px 140px;
 }
 .talk-about {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 /*********************** Classes Specs*************************/
@@ -263,7 +264,8 @@ footer img {
   flex-direction: column;
   position: absolute;
   top: 30px;
-  margin: 0 20%;
+  margin: 0 25%;
+  
 }
 #section-footer-div1 {
   padding: 20px 20px;
@@ -274,7 +276,10 @@ footer img {
   justify-content: space-around;
   width: 100%;
   padding: 0 30px;
-} 
+}
+#ta2 {
+  margin-left: 150px;
+}
 
 /*********************** IDs Specs*************************/
 #bg-over img {
@@ -390,6 +395,17 @@ footer img {
   .logos-card{
     margin: 0 auto;
   }
+  footer ul {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  footer img{
+    height: 8px;
+  }
+  #bg-over h2 {
+    margin: 20px auto;
+    align-content: center;
+  }
   #section-footer-div1 {
     margin: 0 auto;
   }
@@ -442,6 +458,14 @@ footer img {
   }
   .section-header button {
     margin-bottom: 30px;
+  }
+  footer ul {
+    margin-left: 50px;
+    margin-right: 50px;
+    flex-wrap: wrap;
+  }
+  footer img{
+    height: 6px;
   }
   #bg-over {
     padding: 0;
