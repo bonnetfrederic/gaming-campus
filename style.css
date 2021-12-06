@@ -19,6 +19,7 @@ body {
 }
 main {
   position: relative;
+  margin-top: 35px;
 }
 li {
   list-style: none;
@@ -26,6 +27,15 @@ li {
 header {
   margin-top: 10px;
   margin-bottom: 10px;
+
+  /* maintenir la nav en ahut de page */
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  margin: 0 auto 20px;
+  background-color: white;
+  width: 100%;
+  min-height: 20px;
 }
 footer {
   background: rgb(27, 27, 27);
@@ -35,7 +45,7 @@ footer {
 /*********************** General Specs *************************/
 header ul {
   margin: 0 40px;
-  padding: 0;
+  padding: 10px 0 10px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -46,18 +56,10 @@ header li {
   font-weight: bold;
   position:relative;
 }
-header li::before{
-  /* 'content' et 'absolute' sont obligatoire !!! */
-  content: "";
-  position: absolute;
-  height: 3px;
-  width: 100%;
-  background: purple;
-  top: -10px;
-  display: none;
-}
 header li:hover{
   cursor: pointer;
+  padding-top: 8px;
+  border-top: 3px solid purple;
 }
 button:hover {
   cursor: pointer;
@@ -100,9 +102,10 @@ footer img {
   align-items: center;
   text-align: center;
   overflow: hidden;
+  /* margin-top: 50px; */
 }
 .logos {
-  height: 400px;
+  min-height: 400px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -215,6 +218,8 @@ footer img {
 .card img {
   height: 151px;
   width: 180px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
 }
 .card h4 {
   font-size: 0.7rem;
@@ -234,7 +239,6 @@ footer img {
   text-transform: uppercase;
   font-size: 0.6rem;
   font-weight: bold;
-
 }
 
 /*********************** IDs*************************/
@@ -366,4 +370,153 @@ footer img {
 }
 #ta2 img {
   height: 13px;
+}
+
+/*********************** Media Queries ****************************/
+@media (max-width: 800px){
+  header ul{
+    flex-wrap: wrap;
+  }
+  .logos {
+    flex-direction: column;
+    min-height: 100%;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .section-footer {
+    flex-direction: column;
+  }
+  .logos-card{
+    margin: 0 auto;
+  }
+  #section-footer-div1 {
+    margin: 0 auto;
+  }
+  #section-footer-div2 {
+    justify-content: space-between;
+    align-items: center;
+    transform: translateX(-1%);
+    position: relative;
+  }
+  #section-footer-div1 img{
+    padding: 0 auto;
+  }
+  #section-footer-div2 ul, p {
+    display: none;
+  }
+  #parents p, a {
+    display: none;
+  }
+  #contact p{
+    display: none;
+  }
+  #follow {
+    position: absolute;
+    left: 50%;
+    transform: translate(-60%, 5%);
+    margin-top: 30px;
+  }
+  .talk-about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 600px){
+  header {
+    display: none;
+  }
+  main {
+    margin-top: 0;
+  }
+  .section-header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .logos-card{
+    margin: 0 auto;
+  }
+  .section-header button {
+    margin-bottom: 30px;
+  }
+  #bg-over {
+    padding: 0;
+    margin: 0;
+  }
+  #bg-over h2 {
+    width: 400px;
+    text-align: center;
+  }
+  #card-info {
+    position: relative;
+  }
+  #card-info h4 {
+    position: absolute;
+    top: 150px;
+    width: 400px;
+    transform: translateX(-30%);
+  }
+  #card-info h5 {
+    position: absolute;
+    top: 190px;
+    width: 400px;
+    transform: translateX(-30%);
+  }
+  #card-paris {
+    position: relative;
+  }
+  #card-paris h4 {
+    position: absolute;
+    top: 150px;
+    width: 400px;
+    transform: translateX(-30%);
+  }
+  #card-paris h5 {
+    position: absolute;
+    top: 190px;
+    width: 400px;
+    transform: translateX(-30%);
+  }
+  #card-paris button {
+    transform: translateX(-160%);
+  }
+  #card-lyon {
+    position: relative;
+  }
+  #card-lyon h4 {
+    position: absolute;
+    top: 150px;
+    width: 400px;
+    transform: translateX(-30%);
+  }
+  #card-lyon h5 {
+    position: absolute;
+    top: 190px;
+    width: 400px;
+    transform: translateX(-30%);
+  }
+  #card-lyon button {
+    transform: translateX(-160%);
+  }
+  .div2 button {
+    position: absolute;
+    top: 250px;
+    transform: translateX(-130%);
+  }
+  .section-footer {
+    display: none;
+  }
+  #ta1 {
+    display: none;
+  }
+  #ta2 {
+    display: none;
+  }
+    #ta2 li {
+    text-align: center;
+  }
 }
