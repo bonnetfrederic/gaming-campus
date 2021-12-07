@@ -400,7 +400,7 @@ footer img {
     margin-right: 50px;
   }
   footer img{
-    height: 8px;
+    height: 10px;
   }
   #bg-over h2 {
     margin: 20px auto;
@@ -465,14 +465,14 @@ footer img {
     flex-wrap: wrap;
   }
   footer img{
-    height: 6px;
+    height: 10px;
   }
   #bg-over {
     padding: 0;
     margin: 0;
   }
   #bg-over h2 {
-    width: 400px;
+    width: 380px;
     text-align: center;
   }
   #card-info {
@@ -481,14 +481,17 @@ footer img {
   #card-info h4 {
     position: absolute;
     top: 150px;
-    width: 400px;
-    transform: translateX(-30%);
+    width: 380px;
+    transform: translateX(-20%);
   }
   #card-info h5 {
     position: absolute;
     top: 190px;
-    width: 400px;
-    transform: translateX(-30%);
+    width: 380px;
+    transform: translateX(-20%);
+  }
+  #card-info button {
+    transform: translateX(-80%);
   }
   #card-paris {
     position: relative;
@@ -496,17 +499,17 @@ footer img {
   #card-paris h4 {
     position: absolute;
     top: 150px;
-    width: 400px;
-    transform: translateX(-30%);
+    width: 380px;
+    transform: translateX(-20%);
   }
   #card-paris h5 {
     position: absolute;
     top: 190px;
-    width: 400px;
-    transform: translateX(-30%);
+    width: 380px;
+    transform: translateX(-20%);
   }
   #card-paris button {
-    transform: translateX(-160%);
+    transform: translateX(-100%);
   }
   #card-lyon {
     position: relative;
@@ -514,22 +517,22 @@ footer img {
   #card-lyon h4 {
     position: absolute;
     top: 150px;
-    width: 400px;
-    transform: translateX(-30%);
+    width: 380px;
+    transform: translateX(-20%);
   }
   #card-lyon h5 {
     position: absolute;
     top: 190px;
-    width: 400px;
-    transform: translateX(-30%);
+    width: 380px;
+    transform: translateX(-20%);
   }
   #card-lyon button {
-    transform: translateX(-160%);
+    transform: translateX(-100%);
   }
   .div2 button {
     position: absolute;
     top: 250px;
-    transform: translateX(-130%);
+    transform: translateX(-100%);
   }
   .section-footer {
     display: none;
