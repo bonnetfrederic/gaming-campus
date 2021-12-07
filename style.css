@@ -472,7 +472,7 @@ footer img {
     margin: 0;
   }
   #bg-over h2 {
-    width: 380px;
+    width: 360px;
     text-align: center;
   }
   #card-info {
@@ -481,13 +481,13 @@ footer img {
   #card-info h4 {
     position: absolute;
     top: 150px;
-    width: 380px;
+    width: 360px;
     transform: translateX(-20%);
   }
   #card-info h5 {
     position: absolute;
     top: 190px;
-    width: 380px;
+    width: 360px;
     transform: translateX(-20%);
   }
   #card-info button {
@@ -499,13 +499,13 @@ footer img {
   #card-paris h4 {
     position: absolute;
     top: 150px;
-    width: 380px;
+    width: 360px;
     transform: translateX(-20%);
   }
   #card-paris h5 {
     position: absolute;
     top: 190px;
-    width: 380px;
+    width: 360px;
     transform: translateX(-20%);
   }
   #card-paris button {
@@ -517,13 +517,13 @@ footer img {
   #card-lyon h4 {
     position: absolute;
     top: 150px;
-    width: 380px;
+    width: 360px;
     transform: translateX(-20%);
   }
   #card-lyon h5 {
     position: absolute;
     top: 190px;
-    width: 380px;
+    width: 360px;
     transform: translateX(-20%);
   }
   #card-lyon button {
