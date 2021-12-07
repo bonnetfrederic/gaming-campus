@@ -220,7 +220,7 @@ footer img {
   height: 151px;
   width: 180px;
   border-radius: 5px;
-  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.103);
 }
 .card h4 {
   font-size: 0.7rem;
