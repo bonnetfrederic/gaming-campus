@@ -268,8 +268,8 @@ footer img {
   flex-direction: column;
   position: absolute;
   top: 30px;
-  margin: 0 25%;
-  
+  left: 50%;
+  transform: translateX(-50%);
 }
 #section-footer-div1 {
   padding: 20px 20px;
@@ -296,6 +296,7 @@ footer img {
   text-transform: uppercase;
   color: white;
   font-weight:light;
+  text-align: center;
 }
 #bg-over button {
   background: none;
