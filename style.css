@@ -43,6 +43,9 @@ footer {
 }
 
 /*********************** General Specs *************************/
+header nav {
+  height: 40px;
+}
 header ul {
   margin: 0 40px;
   padding: 10px 0 10px 0;
@@ -54,12 +57,12 @@ header li {
   text-transform: uppercase;
   font-size: 0.6rem;
   font-weight: bold;
+  padding-top: 6px;
   position:relative;
 }
 header li:hover{
   cursor: pointer;
-  padding-top: 8px;
-  border-top: 3px solid purple;
+  border-top: 2px solid purple;
 }
 button:hover {
   cursor: pointer;
@@ -256,6 +259,7 @@ footer img {
 }
 #lang:hover {
   cursor: pointer;
+  border-top: none;
 }
 #bg-over {
   display: flex;
